@@ -1,5 +1,5 @@
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "us-east-1"
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
@@ -17,9 +17,9 @@ variable "ECS_INSTANCE_TYPE" {
 variable "ECS_AMIS" {
   type = map(string)
   default = {
-    us-east-1 = "ami-1924770e"
-    us-west-2 = "ami-56ed4936"
-    eu-west-1 = "ami-c8337dbb"
+    us-east-1 = "ami-09d2c35d7664ddd48"
+    us-west-2 = "ami-0b2bd1a0c09913fd8"
+    eu-west-1 = "ami-03d256b62e46142e5"
   }
 }
 
@@ -28,9 +28,9 @@ variable "ECS_AMIS" {
 variable "AMIS" {
   type = map(string)
   default = {
-    us-east-1 = "ami-13be557e"
-    us-west-2 = "ami-06b94666"
-    eu-west-1 = "ami-844e0bf7"
+    us-east-1 = "ami-09e67e426f25ce0d7"
+    us-west-2 = "ami-03d5c68bab01f3496"
+    eu-west-1 = "ami-0a8e758f5e873d1c1"
   }
 }
 
@@ -39,6 +39,10 @@ variable "INSTANCE_DEVICE_NAME" {
 }
 
 variable "JENKINS_VERSION" {
-  default = "2.204.1"
+  default = "2.289.2"
+}
+
+variable "TERRAFORM_VERSION" {
+  default = "1.0.0"
 }
 
